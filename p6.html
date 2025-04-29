@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>اللص والكلاب - الفصل الأول</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1.5rem 1rem;
+      /* Ajustement de la hauteur */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      font-family: 'Amiri', serif;
+      transition: scale 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      scale: 1.1;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Amiri', serif;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #5d3300;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .container {
+      position: relative;
+      max-width: 900px;
+      margin: 5rem auto;
+      /* Adjust for the fixed navbar */
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 16px;
+      z-index: 1;
+      line-height: 2.2;
+      color: black;
+      font-size: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background-color: antiquewhite;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 16px;
+      /* Pour correspondre au conteneur */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    .navigation {
+      display: inline-block;
+      margin-bottom: 5rem;
+      margin-right: 7rem;
+      margin-left: 7rem;
+      padding: 1rem 2rem;
+      background-color: #5d3300;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: 'Amiri', serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navigation:hover {
+      background-color: #7a4500;
+      transform: scale(1.1);
+    }
+
+    .navigation:active {
+      background-color: #4a2500;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="1.html" style="font-family: 'Amiri', serif;">الصفحة الرئيسية</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الصفحات</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الصفحة 1</a>
+        <a href="p6.html" style="font-family: 'Amiri', serif;">الصفحة 2</a>
+        <a href="p8.html" style="font-family: 'Amiri', serif;">الصفحة 3</a>
+        <a href="p10.html" style="font-family: 'Amiri', serif;">الصفحة 4</a>
+        <a href="p11.html" style="font-family: 'Amiri', serif;">الصفحة 5</a>
+        <a href="p13.html" style="font-family: 'Amiri', serif;">الصفحة 6</a>
+        <a href="p15.html" style="font-family: 'Amiri', serif;">الصفحة 7</a>
+      </div>
+    </div>
+    <a href="qcm1.html" style="font-family: 'Amiri', serif;">التمارين</a>
+    <a href="4.html" style="font-family: 'Amiri', serif;">الفيديو الخاص بالفصل الأول</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الفصول</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الفصل 1</a>
+        <a href="#chapter2" style="font-family: 'Amiri', serif;">الفصل 2</a>
+      </div>
+    </div>
+  </nav>
+  <div class="overlay">
+    <div class="container">
+      <h1> الفصل الأول</h1>
+      <strong><em>
+          <p>أقطعُ هذا الشارع ذا البواكي العابسة، طريق الملاهي البائدة، الصاعد إلى غير رفعة، أشهد أني أكرهك، الخَمَّارات
+            أغلقت أبوابها، ولم يبقَ إلا الحواري التي تُحاك فيها المؤامرات، والقدَم تَعْبر من آن؛ لأن نقرة مستقرة في
+            الطَّوَار كالمكيدة، وضجيج عجلات الترام يكركر كالسب، ونداءات شتى تختلط كأنما تنبعث من نفايات الخضر، أشهد أني
+            أكرهك، ونوافذ البيوت المغرية حتى وهي خالية، والجدران المتجهِّمة المقشفة، وهذه العطفة الغريبة عطفة الصيرفي،
+            الذكرى المظلمة، حيث سرق السارق، وفي غمضة عين انطوى، الويل للخونة، في هذه العطفة ذاتها زحفَ الحصار كالثعبان
+            ليطوِّق الغافل، وقبل ذلك بعام خرجت من العطفة ذاتها تحمل دقيق العيد، والأخرى تتقدمك حاملة سناء في قماطها، تلك
+            الأيام الرائعة التي لا يدري أحد مدى صدقها، فانطبعت آثار العيد والحب والأبوة والجريمة فوق أديم واحد، وتراءت
+            الجوامع الشاهقة، وطارت رأس القلعة في السماء الصافية، وانساب الطريق في الميدان، وتجلَّت خضرة البستان تحت
+            الأشعة الحامية، وهبَّت نسمة جافة رغم القيظ منعشة، ميدان القلعة بكل ذكرياته المحرِقة، وكان على الوجه الذي
+            لفحته الشمس أن ينبسط، وأن يصب ماءً باردًا على جوفه المستعر؛ كي يبدو مسالمًا أليفًا، فيمثَّل دوره المرسوم كما
+            ينبغي، واجتاز وسط الميدان مُتجِهًا نحو سِكَّة الإمام، ومضى فيها يقترب من البيت ذي الأدوار الثلاثة، في
+            نهايتها، وعلى مفرق عطفتَين جانبيتَين يتفرع إليهما الطريق الأول، في هذه الزوية البريئة سيكشف العدو عما
+            أعدَّهُ للّقاء، فادرسْ طريقك ومواقعه، وهذه الدكاكين التي تشرئبٌّ منها الرءوس كالفيران المتوجسة، وجاءه صوت من
+            وراء يقول:</p>
+          <p>سعيد مهران! .. ألف نهار أبيض!</p>
+          <p>توقَّفَ عن المسير حتى أدركه الرجل، فتصافحا وهما يُغطِّيان على انفعالاتهما الحقيقية بابتسامة باهتة، إذن بات
+            للوغد أعوان، وسيرى قريبًا ما وراء هذا الاستقبال، ولعلك تنظر من الشيش مستخفيًا كالنساء يا عليش.</p>
+          <p>- أشكرك يا معلم بيَّاظة!</p>
+          <p>ولحق بهما كثيرون من الدكاكين على الجانبَينِ، وارتفعَتْ حرارة التهاني، وسرعان ما وجد نفسه مُطوَّقًا من جميع
+            الجهات بحشد من أصدقاء غريمه ولا شكَّ، واسْتَبِقَتِ الحناجر قائلة: الحمد لله على سلامتك!</p>
+          <p>- مبارك للأصدقاء والأحباب!</p>
+          <p>- قلنا من القلوب سيفرج عنه في عيد الثورة!</p>
+          <p>فقال وهو يتفحصهم بعينَيهِ اللوزيتَينِ العسليتَينِ: الشكر لله ولكم!</p>
+        </em></strong>
+      <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: gray;">
+        الصفحة 2
+      </div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a class="navigation" href="p4.html">السابق</a>
+    <a class="navigation" href="p8.html">التالي</a>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>أسئلة اختيار من متعدد</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .question {
+      margin-bottom: 30px;
+    }
+
+    .question h3 {
+      color: #444;
+    }
+
+    .options label {
+      display: block;
+      padding: 10px 15px;
+      margin: 8px 0;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .options label:hover {
+      background: #e6f7ff;
+    }
+
+    .options input[type="radio"] {
+      margin-left: 10px;
+    }
+
+    .submit-btn {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #0056b3;
+    }
+
+    .result {
+      margin-top: 20px;
+      padding: 15px;
+      background: #d4edda;
+      border: 1px solid #c3e6cb;
+      border-radius: 8px;
+      color: #155724;
+      display: none;
+    }
+
+    .correct {
+      background: #d4edda;
+      border-color: #c3e6cb;
+    }
+
+    .incorrect {
+      background: #f8d7da;
+      border-color: #f5c6cb;
+    }
+
+    .correct-answer {
+      color: #155724;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <h1>أسئلة اختيار من متعدد</h1>
+
+    <form id="quizForm">
+      <div class="question">
+        <h3>1. ما الذي يصفه النص في بداية اللقاء بين سعيد مهران وابنته سناء؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q1" value="A"> شعور سعيد مهران بالفرح الشديد </label>
+          <label><input type="radio" name="q1" value="B"> شعور سعيد مهران بالضياع وعدم التمكن من التواصل مع ابنته
+          </label>
+          <label><input type="radio" name="q1" value="C"> لقاء حميم بين الأب وابنته دون أي توترات</label>
+          <label><input type="radio" name="q1" value="D"> تذمر سناء من سعيد مهران</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>2. كيف تصرف سعيد مهران بعد أن رفضت ابنته الاقتراب منه؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q2" value="A"> ضحك وسرح في ذكرياته </label>
+          <label><input type="radio" name="q2" value="B"> تجاهل الموقف وترك المكان </label>
+          <label><input type="radio" name="q2" value="C"> تمسك بها بقوة وصرخ فيها </label>
+          <label><input type="radio" name="q2" value="D"> ذهب للحديث مع عليش حول القضية </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>3. ما هو الموقف الذي عبر عنه المخبر خلال اللقاء؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q3" value="A"> تردد في اتخاذ قرار بشأن البنت</label>
+          <label><input type="radio" name="q3" value="B"> كان يهمه تسوية الموضوع بشكل قانوني</label>
+          <label><input type="radio" name="q3" value="C"> اهتم فقط بتصرفات سعيد مهران وأمواله </label>
+          <label><input type="radio" name="q3" value="D"> دعم سعيد مهران بشكل عاطفي</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>4. ماذا كانت ردة فعل سعيد مهران عندما طلب المخبر منه التوقف عن الغضب؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q4" value="A"> انفجر في وجهه</label>
+          <label><input type="radio" name="q4" value="B"> تقبل النصيحة بهدوء وأقر بأن المحكمة هي الحل</label>
+          <label><input type="radio" name="q4" value="C"> شعر بالضعف وانهار في المكان </label>
+          <label><input type="radio" name="q4" value="D"> اعترض على المحكمة وتحدى المخبر</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>5. كيف تم وصف عليش في اللقاء؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q5" value="A"> رجل هادئ يتصف بالحكمة </label>
+          <label><input type="radio" name="q5" value="B"> يظهر الصرامة وعدم التعبير عن مشاعره </label>
+          <label><input type="radio" name="q5" value="C"> عاطفي للغاية ويسعى لتحقيق المصالحة</label>
+          <label><input type="radio" name="q5" value="D"> شخص مخادع وغير صادق في حديثه </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>6. ماذا طلب سعيد مهران من عليش في نهاية المقابلة؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q6" value="A"> أن يذهب ويبحث عن عمل له </label>
+          <label><input type="radio" name="q6" value="B"> أن يعيد له كتبه التي فقدها </label>
+          <label><input type="radio" name="q6" value="C"> أن يتركه وحيدًا بعيدًا عن الجميع </label>
+          <label><input type="radio" name="q6" value="D"> أن يحضر له ابنته فورًا </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>7. كيف كان رد فعل المخبر عندما تحدث سعيد مهران عن كتبه؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q7" value="A"> كان يعتقد أن الكتب لا قيمة لها </label>
+          <label><input type="radio" name="q7" value="B"> كان يضحك ساخرًا ويتساءل إذا كان سعيد قد سرق الكتب </label>
+          <label><input type="radio" name="q7" value="C"> طلب من سعيد أن يحرق كتبه </label>
+          <label><input type="radio" name="q7" value="D"> وافق على إعادتها له دون أي تعليق </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>8. كيف عبرت سناء عن مشاعرها تجاه سعيد مهران أثناء اللقاء؟
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q8" value="A"> اقتربت منه واحتضنته فورًا</label>
+          <label><input type="radio" name="q8" value="B"> ابتسمت وقالت له أنها تفتقده</label>
+          <label><input type="radio" name="q8" value="C"> ابتعدت عنه بشدة وأظهرت رفضها</label>
+          <label><input type="radio" name="q8" value="D"> بقيت صامتة ولم تظهر أي مشاعر</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>9. كيف يصف النص علاقة سعيد مهران بعليش في بداية اللقاء؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q9" value="A"> علاقة مليئة بالود والمصالحة</label>
+          <label><input type="radio" name="q9" value="B"> علاقة مشحونة بالتوتر والعداوة </label>
+          <label><input type="radio" name="q9" value="C"> علاقة قائمة على الاحترام والتفاهم </label>
+          <label><input type="radio" name="q9" value="D"> علاقة متوازنة بلا مشاعر واضحة </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>10. كيف يؤثر رفض سناء للأب في سعيد مهران؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q10" value="A"> يشعر بالسلام الداخلي ويقبل الوضع</label>
+          <label><input type="radio" name="q10" value="B"> يزيد شعوره بالهزيمة والغضب</label>
+          <label><input type="radio" name="q10" value="C"> يحاول إقناعها بحنانه ورغبته في العناية بها</label>
+          <label><input type="radio" name="q10" value="D"> يتجاهلها ويغادر المكان </label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>11. ما الذي يكشفه تصرف المخبر أثناء اللقاء عن شخصيته؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q11" value="A"> ميله نحو العنف وفرض القوة</label>
+          <label><input type="radio" name="q11" value="B"> حرصه على القيم الإنسانية والنزاهة</label>
+          <label><input type="radio" name="q11" value="C"> إظهار الحكمة والتروي في اتخاذ القرارات</label>
+          <label><input type="radio" name="q11" value="D"> ميله للمزاح والتلاعب بالأحداث</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>12. في رأيك، ما الذي يعبر عنه الحديث بين سعيد مهران وعليش عن المحكمة؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q12" value="A"> تصاعد التوتر بين الشخصيات وعدم وجود حلول</label>
+          <label><input type="radio" name="q12" value="B"> الحوار يظهر رغبة في التعاون والتفاهم</label>
+          <label><input type="radio" name="q12" value="C"> يشير إلى قلة الأمل في النظام القانوني</label>
+          <label><input type="radio" name="q12" value="D"> تعبير عن قسوة الحياة وتجاهل القيم الإنسانية</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>13. ما تأثير الحديث عن الكتب على سعيد مهران؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q13" value="A"> يُظهر اهتمامه البسيط بالماضي والتفاصيل</label>
+          <label><input type="radio" name="q13" value="B"> يرمز إلى فقدانه للذكريات الشخصية والعاطفية</label>
+          <label><input type="radio" name="q13" value="C"> يُظهر اهتمامه الكبير بالمعرفة والكتب</label>
+          <label><input type="radio" name="q13" value="D"> يرمز إلى محاولاته الفاشلة للتواصل مع الآخرين</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>14. ما هي دوافع سعيد مهران من خلال سعيه لاستعادة ابنته؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q14" value="A"> رغبة في الانتقام من عليش</label>
+          <label><input type="radio" name="q14" value="B"> شعور بالذنب لابتعاد ابنته عنه</label>
+          <label><input type="radio" name="q14" value="C"> رغبة في التأكيد على حقوقه الأبوة والميراث</label>
+          <label><input type="radio" name="q14" value="D"> دافع عاطفي قوي لاحتضان ابنته والحفاظ عليها</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>15. كيف يُمكن تفسير رد فعل عليش تجاه سعيد مهران وابنته؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q15" value="A"> يظهر تحمله لمشاعر سعيد ورغبته في مساعدته</label>
+          <label><input type="radio" name="q15" value="B"> يظهر تحكمه الكامل في المواقف وتجاهله لمشاعر الآخرين</label>
+          <label><input type="radio" name="q15" value="C"> يظهر تخليه عن مسؤولياته تجاه سعيد وابنته</label>
+          <label><input type="radio" name="q15" value="D"> يظهر خوفه من مواجهة مشاعر قديمة مع سعيد</label>
+        </div>
+      </div>
+
+      <div class="question">
+        <h3>16. ما هي الرسالة التي قد يرسلها النص بخصوص النظام القضائي في المجتمع؟
+
+
+
+        </h3>
+        <div class="options">
+          <label><input type="radio" name="q16" value="A"> يُظهر فعاليته وقدرته على تحقيق العدالة</label>
+          <label><input type="radio" name="q16" value="B"> يوضح قصوره وعيوبه في معاملة القضايا العاطفية</label>
+          <label><input type="radio" name="q16" value="C"> يظهر أن القانون هو الحل الوحيد لمشاكل الناس</label>
+          <label><input type="radio" name="q16" value="D"> لا يقدم أي نقد للنظام القضائي</label>
+        </div>
+      </div>
+
+
+    </form>
+
+    <button id="verifyBtn" class="submit-btn">تحقق من الإجابات</button>
+    <button id="nextPageBtn" class="submit-btn" style="margin-top: 10px;">الصفحة الرئيسية</button>
+  </div>
+
+  <script>
+    const correctAnswers = {
+      q1: "B",
+      q2: "C",
+      q3: "B",
+      q4: "B",
+      q5: "B",
+      q6: "B",
+      q7: "B",
+      q8: "C",
+      q9: "B",
+      q10: "B",
+      q11: "C",
+      q12: "A",
+      q13: "B",
+      q14: "D",
+      q15: "B",
+      q16: "B"
+    };
+
+    document.getElementById('verifyBtn').addEventListener('click', () => {
+      const form = document.getElementById('quizForm');
+      const questions = form.querySelectorAll('.question');
+
+      questions.forEach((question, index) => {
+        const questionId = `q${index + 1}`;
+        const selectedOption = question.querySelector(`input[name="${questionId}"]:checked`);
+        const correctAnswer = correctAnswers[questionId];
+
+        question.querySelectorAll('label').forEach(label => {
+          label.classList.remove('correct', 'incorrect');
+          label.style.backgroundColor = '';
+        });
+
+        // Remove any existing feedback messages
+        const existingFeedback = question.querySelector('.feedback');
+        if (existingFeedback) existingFeedback.remove();
+
+        if (selectedOption) {
+          const parentLabel = selectedOption.parentElement;
+          const feedback = document.createElement('div');
+          feedback.classList.add('feedback');
+          feedback.style.marginTop = '5px';
+
+          if (selectedOption.value === correctAnswer) {
+            parentLabel.classList.add('correct');
+            parentLabel.style.backgroundColor = '#d4edda';
+            feedback.style.color = 'green';
+            feedback.textContent = 'الإجابة صحيحة';
+          } else {
+            parentLabel.classList.add('incorrect');
+            parentLabel.style.backgroundColor = '#f8d7da';
+            feedback.style.color = 'red';
+            const correctLabel = question.querySelector(`input[value="${correctAnswer}"]`).parentElement;
+            correctLabel.classList.add('correct');
+            correctLabel.style.backgroundColor = '#d4edda';
+            feedback.textContent = `الإجابة الصحيحة: ${correctLabel.textContent.trim()}`;
+          }
+
+          question.appendChild(feedback);
+        }
+      });
+    });
+
+    document.getElementById('nextPageBtn').addEventListener('click', () => {
+      window.location.href = '1.html';
+    });
+  </script>
+</body>
+
+</html>

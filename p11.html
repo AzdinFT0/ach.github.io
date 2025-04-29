@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>اللص والكلاب - متابعة الفصل الأول</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1.5rem 1rem;
+      /* Ajustement de la hauteur */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      font-family: 'Amiri', serif;
+      transition: scale 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      scale: 1.1;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Amiri', serif;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #5d3300;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .container {
+      position: relative;
+      max-width: 900px;
+      margin: 5rem auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 16px;
+      z-index: 1;
+      line-height: 2.2;
+      color: black;
+      font-size: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background-color: antiquewhite;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 16px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    .navigation {
+      display: inline-block;
+      margin-bottom: 5rem;
+      margin-right: 7rem;
+      margin-left: 7rem;
+      padding: 1rem 2rem;
+      background-color: #5d3300;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: 'Amiri', serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navigation:hover {
+      background-color: #7a4500;
+      transform: scale(1.1);
+    }
+
+    .navigation:active {
+      background-color: #4a2500;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="1.html" style="font-family: 'Amiri', serif;">الصفحة الرئيسية</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الصفحات</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الصفحة 1</a>
+        <a href="p6.html" style="font-family: 'Amiri', serif;">الصفحة 2</a>
+        <a href="p8.html" style="font-family: 'Amiri', serif;">الصفحة 3</a>
+        <a href="p10.html" style="font-family: 'Amiri', serif;">الصفحة 4</a>
+        <a href="p11.html" style="font-family: 'Amiri', serif;">الصفحة 5</a>
+        <a href="p13.html" style="font-family: 'Amiri', serif;">الصفحة 6</a>
+        <a href="p15.html" style="font-family: 'Amiri', serif;">الصفحة 7</a>
+      </div>
+    </div>
+    <a href="qcm1.html" style="font-family: 'Amiri', serif;">التمارين</a>
+    <a href="4.html" style="font-family: 'Amiri', serif;">الفيديو الخاص بالفصل الأول</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الفصول</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الفصل 1</a>
+        <a href="#chapter2" style="font-family: 'Amiri', serif;">الفصل 2</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <strong><em>
+        <h1> متابعة الفصل الأول</h1>
+        <p>فهتف المخبر: تقصد مسروقاتك؟! تلك التي أنكرتها في المحكمة!</p>
+        <p>- ليكن، ولكن أين ذهبت؟!</p>
+        <p>فصاح عليش: ولا ملِّيم! صدقوني يا رجال، كانت الحال لا يُسَّ بها عدو ولا حبيب، وحقًّا قمتُ بالواجب.</p>
+        <p>فتساءل سعيد في تحدٍّ: خَبّرني، كيف أمكنَكَ أن تعيش في سعة وأن تنفق على الآخَرين؟</p>
+        <p>فصاح عليش محتدًّا: هل أنت ربنا حتى تحاسبني؟!</p>
+        <p>وقال رجل من ماسحي الجوخ: اخْزِ الشيطان يا سعيد!</p>
+        <p>وقال المخبر: أنا عارفك وفاهمك، أنا خير مَن يقرأ داخل رأسك، ولكنك ستُهلك نفسك، لا تخرج عن موضوع البنت، فهذا
+          خير لك!</p>
+        <p>فتراجع سعيد باسمًا وهو يُخفي عينيهِ في الأرض، وقال باستسلام: بالحق نطقتَ يا حضرة المخبر ...</p>
+        <p>- أنا عارفك وفاهمك ولكنني سأماشيك احترامًا لهؤلاء الرجال، هاتوا البنت، أليس الأفضل أن نعرف رأيها أولًا ؟</p>
+        <p>- كيف يا حضرة المخبر؟</p>
+        <p>- يا سعيد، أنا فاهمك، أنت لا تريد البنت، ولا تستطيع أن تأويها، ولن تجد لنفسك مأوى إلا بعد الجهد، ولكن من
+          العدل والرحمة أن تراها، هاتوا البنت.</p>
+        <p>بل هاتوا أمها، كم أرغب أن تلتقي العينان؛ كي أرى سرًّا من أسرار الجحيم، الفأس والمطرقة.</p>
+        <p>وقام عليش ليجيء بها، وعندما ترامى وقع الأقدام القادمة خفق قلب سعيد خفقةً موجعة، وتطلَّع إلى الباب وهو يعض على
+          باطن شفتَيهِ.</p>
+        <p>مسحَ تطلُّعٌ شيِّق وحنان جارف جميعَ عواصف الحَنَق، وظهرت البنت بعينَينِ داهشتَين بين يدي الرجل، ظهرت بعد
+          انتظار طال ألف سنة، وتبدَّت في فستان أبيض أنيق، وشبشب أبيض كشف عن أصابع قدمَيْها المخضوبتَينِ.</p>
+        <p>تطلَّعَتْ بوجه أسمر، وشعر أسود مسبسب فوق الجبين، فالتهمتها روحه، وجعلت تقلَّب عينَيْها في الوجوه بغرابة، وفي
+          وجهه خاصة باستنكار لشدة تحديقه، ولشعورها بأنها تُدفَع نحوه، وإذا بها تفرمل قدمَيْها في البساط، وتميل بجسدها
+          إلى الوراء.</p>
+        <p>لم ينزع منها عينَيهِ، ولكنَّ قلبه انكسَر، انكسر حتى لم يبقَ فيه إلا شعور بالضياع، كأنها ليست بابنته، رغم
+          العينَينِ اللوزيتَينِ والوجه المستطيل والأنف الأقنى الطويل.</p>
+        <p>ونداء الدم والروح، ما شأنه؟ أم هو الآخَر قد خان وغدر؟ وكيف له رغم ذلك كله بمقاومة هذه الرغبة الجامحة في
+          ضمِّها إلى صدره حتى الفناء؟</p>
+
+        <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: gray;">
+          الصفحة 5
+        </div>
+    </strong></em>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a class="navigation" href="p10.html">السابق</a>
+    <a class="navigation" href="p13.html">التالي</a>
+  </div>
+
+</body>
+
+</html>

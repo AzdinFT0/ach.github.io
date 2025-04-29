@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>اللص والكلاب - متابعة الفصل الأول</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1.5rem 1rem;
+      /* Ajustement de la hauteur */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      font-family: 'Amiri', serif;
+      transition: scale 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      scale: 1.1;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Amiri', serif;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #5d3300;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .container {
+      position: relative;
+      max-width: 900px;
+      margin: 5rem auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 16px;
+      z-index: 1;
+      line-height: 2.2;
+      color: black;
+      font-size: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background-color: antiquewhite;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 16px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    .navigation {
+      display: inline-block;
+      margin-bottom: 5rem;
+      margin-right: 7rem;
+      margin-left: 7rem;
+      padding: 1rem 2rem;
+      background-color: #5d3300;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: 'Amiri', serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navigation:hover {
+      background-color: #7a4500;
+      transform: scale(1.1);
+    }
+
+    .navigation:active {
+      background-color: #4a2500;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="1.html" style="font-family: 'Amiri', serif;">الصفحة الرئيسية</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الصفحات</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الصفحة 1</a>
+        <a href="p6.html" style="font-family: 'Amiri', serif;">الصفحة 2</a>
+        <a href="p8.html" style="font-family: 'Amiri', serif;">الصفحة 3</a>
+        <a href="p10.html" style="font-family: 'Amiri', serif;">الصفحة 4</a>
+        <a href="p11.html" style="font-family: 'Amiri', serif;">الصفحة 5</a>
+        <a href="p13.html" style="font-family: 'Amiri', serif;">الصفحة 6</a>
+        <a href="p15.html" style="font-family: 'Amiri', serif;">الصفحة 7</a>
+      </div>
+    </div>
+    <a href="qcm1.html" style="font-family: 'Amiri', serif;">التمارين</a>
+    <a href="4.html" style="font-family: 'Amiri', serif;">الفيديو الخاص بالفصل الأول</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الفصول</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الفصل 1</a>
+        <a href="#chapter2" style="font-family: 'Amiri', serif;">الفصل 2</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <strong><em>
+        <h1>متابعة الفصل الأول</h1>
+        <p>وقال المخبر بضجر ودون اكتراث: أبوكِ يا شاطرة!</p>
+        <p>وقال عليش بوجه لا يبين عن شيء: سلَّمي على بابا.</p>
+        <p>كالفأرة! ممَّ تخاف؟! ألا تدري كم يحبها؟! ومدَّ نحوها يده، ولكنه بدل الكلام شرق فازدردَ ريقه، وابتسم في رقّة
+          وإغراء، وقالت سناء: لا.</p>
+        <p>وتحركت لتتسلل راجعةً، لولا الرجل وراءها، وهتفت ماما، فدفعها الرجل برقة وهو يقول: سلمي على بابا!</p>
+        <p>وتجلّت في الأعين نظرات اهتمام، وشماتة، وآمن سعيد بأن جَلد السجن ليس بالقسوة التي كان يظنها، وقال متوسلًا:
+          تعالي يا سناء!</p>
+        <p>ولم يعُد يحتمل رفضها، فقام نصف قومة ومال نحوها، فهتفتْ: لا!</p>
+        <p>- أنا بابا.</p>
+        <p>فرفعت عينيها إلى عليش سدرة مستغربة، فقال سعيد بإصرار: أنا بابا، أنا، تعالي!</p>
+        <p>فتأبَّت واشتد ميلها إلى الوراء، جذبها نحوه بشيء من القوة؛ صرخت، ضمها إلى صدره فدافعته باكية، ومال نحوها ليلثم
+          - رغم هزيمته ويأسه - فاها، أو خدها، ولكن شفتاه لم تلثما إلا ساعدها المتحرك في عصبية غير راحمة.</p>
+        <p>- أنا بابا، لا تخافي، أنا بابا!</p>
+        <p>وأفعمت رائحة شعرها روحه بذكرى أمها؛ فتقبضت أساريره، وازدادت البنت مدافعةً وبكاءً، حتى قال المخبر: على مهلك،
+          البنت لا تعرفك!</p>
+        <p>فتركها تجري يائسا، ثم اعتدل في جلسته وهو يقول بغضب: سوف آخذها!</p>
+        <p>ومضت هنيهة صمت قبل أن يقول له بيَّاظة: هدئ نفسك أولاً!</p>
+        <p>- لا بُدَّ أن تعود إليَّ!</p>
+        <p>فقال المخبر بحدّةٍ: دع القرار للقاضي!</p>
+        <p>ثم التفت نحو عليش متسائلًا: نعم؟!</p>
+        <p>فقال عليش: الأمر لا يخصني في شيء، ولكن أمها لن تفرط فيها إلا بالشرع!</p>
+        <p>فقال المخبر: كما قلت أول الأمر، كلمة واحدة لا ثاني لها، وهي المحكمة!</p>
+        <p>وشعر سعيد بأنه لو تمادى في الغضب لانفجر جنونه، فتسلّط على مشاعره بقوة غير طبيعية، مذكِّرًا نفسه بأشياء كاد
+          ينساها، وقال بهدوء نسبي: نعم، المحكمة!</p>
+        <p>فقال بيّاظة: والبنت كما ترى تعيش في رعاية وراحة!</p>
+        <p>وقال المخبر في لهجة لم تخلُ من سخرية: ابحث أولًا عن طريق مستقيم تأكل منه لقمتك!</p>
+        <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: gray;">
+          الصفحة 6
+        </div>
+    </strong></em>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a class="navigation" href="p11.html">السابق</a>
+    <a class="navigation" href="p15.html">التالي</a>
+  </div>
+
+</body>
+
+</html>

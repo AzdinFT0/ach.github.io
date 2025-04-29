@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>اللص والكلاب - متابعة الفصل الأول</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1.5rem 1rem;
+      /* Ajustement de la hauteur */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      font-family: 'Amiri', serif;
+      transition: scale 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      scale: 1.1;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Amiri', serif;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #5d3300;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .container {
+      position: relative;
+      max-width: 900px;
+      margin: 5rem auto;
+      /* Adjust for the fixed navbar */
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 16px;
+      z-index: 1;
+      line-height: 2.2;
+      color: black;
+      font-size: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background-color: antiquewhite;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 16px;
+      /* Pour correspondre au conteneur */
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    .navigation {
+      display: inline-block;
+      margin-bottom: 5rem;
+      margin-right: 7rem;
+      margin-left: 7rem;
+      padding: 1rem 2rem;
+      background-color: #5d3300;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: 'Amiri', serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navigation:hover {
+      background-color: #7a4500;
+      transform: scale(1.1);
+    }
+
+    .navigation:active {
+      background-color: #4a2500;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="1.html" style="font-family: 'Amiri', serif;">الصفحة الرئيسية</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الصفحات</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الصفحة 1</a>
+        <a href="p6.html" style="font-family: 'Amiri', serif;">الصفحة 2</a>
+        <a href="p8.html" style="font-family: 'Amiri', serif;">الصفحة 3</a>
+        <a href="p10.html" style="font-family: 'Amiri', serif;">الصفحة 4</a>
+        <a href="p11.html" style="font-family: 'Amiri', serif;">الصفحة 5</a>
+        <a href="p13.html" style="font-family: 'Amiri', serif;">الصفحة 6</a>
+        <a href="p15.html" style="font-family: 'Amiri', serif;">الصفحة 7</a>
+      </div>
+    </div>
+    <a href="qcm1.html" style="font-family: 'Amiri', serif;">التمارين</a>
+    <a href="4.html" style="font-family: 'Amiri', serif;">الفيديو الخاص بالفصل الأول</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الفصول</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الفصل 1</a>
+        <a href="#chapter2" style="font-family: 'Amiri', serif;">الفصل 2</a>
+      </div>
+    </div>
+
+  </nav>
+  <div class="container">
+    <h1> متابعة الفصل الأول</h1>
+    <p><strong><em>فربت بيَّاظة على مَنكبه قائلًا: تعالَ إلى الدكان لنشرب الشربات!</em></strong></p>
+    <p><strong><em>فقال بهدوء: فيما بعد، عند العودة.</em></strong></p>
+    <p><strong><em>- العودة؟.</em></strong></p>
+    <p><strong><em>وصاح أحد الرجال موجِّهًا حنجرته إلى الدور الثاني من البيت: يا معلم عليش. .. يا معلم عليش، انزل هنئ
+          سعيد مهران!</em></strong></p>
+    <p><strong><em>لا داعي للتحذير يا خنفساء، إني قادم في ضوء النهار .. وأعلم أنكم تترقبون .. وعاد بيَّاظة يتساءل:
+          العودة من أين؟</em></strong></p>
+    <p><strong><em>- لديَّ حساب يجب أن أسوِّيه!</em></strong></p>
+    <p><strong><em>فتساءل بوجه ممتعض: مع مَن؟</em></strong></p>
+    <p><strong><em>- أنسيت أنني أب؟ .. وأن ابنتي الصغيرة عند عليش؟</em></strong></p>
+    <p><strong><em>- نعم، ولكلِّ خلاف حلٌّ في الشرع!</em></strong></p>
+    <p><strong><em>وقال آخر: والتفاهُم خير!</em></strong></p>
+    <p><strong><em>وثالث قال بنبرة المسالم: سعيد، أنت قادم من السجن، والعاقل مَن اتّعظ!</em></strong></p>
+    <p><strong><em>فقال وهو يداري حنقه المختنِق: مَن قال إني جئت لغير التفاهُم؟!</em></strong></p>
+    <p><strong><em>وفتحَتْ نافذة من الدور الثاني، وأطلّ منها عليش؛ فارتفعت الرءوس إليه في توتر، وقبل أن تبدر كلمة خرج من
+          باب البيت رجل طويل عريض، في جلباب مقلم، ينتعل حذاءً حكوميًّا، فعرف سعيد فيه المخبر حسب الله، وسرعان ما تظاهر
+          بالدهش، وقال منفعلا:</em></strong></p>
+    <p><strong><em>ماذا دعا إلى إقلاقك، وما جئتُ إلا للتفاهم؟</em></strong></p>
+    <p><strong><em>فمضى نحوه مسرعًا، وتحسَّسه مفتِّشًا عما يريب في صدره أو جيوبه، فعلَ ذلك بمهارة وخفة ودُرْبة وهو يقول:
+          اسكت يا بن الثعلب، ماذا تريد؟</em></strong></p>
+    <p><strong><em>- جئتُ للتفاهم على مستقبل ابنتي.</em></strong></p>
+    <p><strong><em>- أنت تعرف التفاهم؟!</em></strong></p>
+    <p><strong><em>- نعم، من أجل ابنتي!</em></strong></p>
+    <p><strong><em>- عندك المحكمة!</em></strong></p>
+    <p><strong><em>- سألجأ إليها عند اليأس!</em></strong></p>
+    <p><strong><em>وصاح عليش من أعلى: دَعْه يدخل، تفضلوا!</em></strong></p>
+    <p><strong><em>اجمعهم حولك يا جبان، إنما جئتُ أجس حصونك، وعند الأجل لا ينفع مخبر ولا جدار. ودخلوا حُجرة استقبال،
+          فتفرَّقوا فوق الكنب والمقاعد، وفُتحَت النوافذ، فاندفع...</em></strong></p>
+
+    <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: gray;">
+      الصفحة 3
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 2rem;">
+    <a class="navigation" href="p6.html">السابق</a>
+    <a class="navigation" href="p10.html">التالي</a>
+  </div>
+
+</body>
+
+</html>

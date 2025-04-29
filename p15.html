@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <title>اللص والكلاب - نهاية الفصل الأول</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      position: relative;
+    }
+
+    body::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: inherit;
+      filter: blur(8px);
+      z-index: -1;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 1.5rem 1rem;
+      /* Ajustement de la hauteur */
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 2rem;
+      font-size: 1.2rem;
+      font-family: 'Amiri', serif;
+      transition: scale 0.3s ease;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+      scale: 1.1;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.8);
+      min-width: 160px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+    }
+
+    .dropdown-menu a {
+      color: white;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      font-family: 'Amiri', serif;
+    }
+
+    .dropdown-menu a:hover {
+      background-color: #5d3300;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .container {
+      position: relative;
+      max-width: 900px;
+      margin: 5rem auto;
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 2rem;
+      border-radius: 16px;
+      z-index: 1;
+      line-height: 2.2;
+      color: black;
+      font-size: 25px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      background-color: antiquewhite;
+    }
+
+    .container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      border-radius: 16px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      text-align: justify;
+      margin-bottom: 1.5rem;
+    }
+
+    .navigation {
+      display: inline-block;
+      margin-bottom: 5rem;
+      margin-right: 7rem;
+      margin-left: 7rem;
+      padding: 1rem 2rem;
+      background-color: #5d3300;
+      color: white;
+      border-radius: 10px;
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-family: 'Amiri', serif;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navigation:hover {
+      background-color: #7a4500;
+      transform: scale(1.1);
+    }
+
+    .navigation:active {
+      background-color: #4a2500;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+    <a href="1.html" style="font-family: 'Amiri', serif;">الصفحة الرئيسية</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الصفحات</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الصفحة 1</a>
+        <a href="p6.html" style="font-family: 'Amiri', serif;">الصفحة 2</a>
+        <a href="p8.html" style="font-family: 'Amiri', serif;">الصفحة 3</a>
+        <a href="p10.html" style="font-family: 'Amiri', serif;">الصفحة 4</a>
+        <a href="p11.html" style="font-family: 'Amiri', serif;">الصفحة 5</a>
+        <a href="p13.html" style="font-family: 'Amiri', serif;">الصفحة 6</a>
+        <a href="p15.html" style="font-family: 'Amiri', serif;">الصفحة 7</a>
+      </div>
+    </div>
+    <a href="qcm1.html" style="font-family: 'Amiri', serif;">التمارين</a>
+    <a href="4.html" style="font-family: 'Amiri', serif;">الفيديو الخاص بالفصل الأول</a>
+    <div class="dropdown">
+      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الفصول</a>
+      <div class="dropdown-menu">
+        <a href="p4.html" style="font-family: 'Amiri', serif;">الفصل 1</a>
+        <a href="#chapter2" style="font-family: 'Amiri', serif;">الفصل 2</a>
+      </div>
+    </div>
+  </nav>
+  <div class="container">
+    <h1> نهاية الفصل الأول </h1>
+    <strong><em>
+        <p>ورغم هذا بدا أنه يسيطر على نفسه أكثر فأكثر، حتى قال: نعم، كل هذا حق، ولا داعي للأسف من ناحيتي، وسأعاود
+          التفكير في الأمر كله، ولا شك أنه خير أن أنسى الماضي، وأن أبحث عن عمل حتى أهيئ للبنت مكانًا طيبًا في الوقت
+          المناسب.</p>
+        <p>وساد الصمت دهشة، فتُبودِلَتْ نظرات مصدِّقة وغير مصدِّقة، وكوَّر المخبر قبضته على المسبحة متسائلًا: انتهينا؟
+        </p>
+        <p>فقال سعيد: نعم، ولكني أريد كُتبي!</p>
+        <p>- كتُبك؟!</p>
+        <p>- نعم.</p>
+        <p>فصاح عليش: ضاع أكثرها بيد سناء، وسأحضر لك ما بقي منها.</p>
+        <p>وغاب الرجل بُرهةً ثم عاد حاملًا على يدَيهِ عامودًا متوسطًا من الكتب، فوضعه وسط الحجرة، وقام سعيد إلى المجموعة
+          فتناول كتابًا إثر آخَر وهو يقول بأسف: ضاع أكثرها حقًّا!</p>
+        <p>وضحك المخبر متسائلًا: من أين لك هذا العلم؟</p>
+        <p>ثم وهو ينهض مُعلِنًا انتهاء المقابلة: أكنتَ تسرق - فيما تسرق - الكتب؟</p>
+        <p>وابتسم الجميع، ولكن سعيد أقبل يحمل الكتب دون أن يبتسمَ.</p>
+        <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: gray;">
+          الصفحة 7
+        </div>
+    </strong></em>
+  </div>
+
+  <div style="text-align: center; margin-top: 2rem;">
+    <a class="navigation" href="p13.html">السابق</a>
+    <a class="navigation" href="4.html">التالي</a>
+  </div>
+</body>
+
+</html>
