@@ -43,19 +43,18 @@
       margin: 0 2rem;
       font-size: 1.2rem;
       font-family: 'Amiri', serif;
-      transition: scale 0.3s ease;
+      transition: transform 0.3s ease;
     }
 
     nav a:hover {
       text-decoration: underline;
-      scale: 1.1;
+      transform: scale(1.1);
     }
 
     .container {
       position: relative;
       max-width: 900px;
       margin: 5rem auto;
-      /* Adjust for the fixed navbar */
       background-color: rgba(255, 255, 255, 0.9);
       padding: 2rem;
       border-radius: 16px;
@@ -64,19 +63,6 @@
       color: black;
       font-size: 25px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-      background-color: antiquewhite;
-    }
-
-    .container::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: -1;
-      border-radius: 16px;
-      /* Pour correspondre au conteneur */
     }
 
     h1 {
@@ -92,9 +78,7 @@
 
     .navigation {
       display: inline-block;
-      margin-bottom: 5rem;
-      margin-right: 7rem;
-      margin-left: 7rem;
+      margin: 2rem;
       padding: 1rem 2rem;
       background-color: #5d3300;
       color: white;
@@ -149,76 +133,50 @@
 
 <body>
   <nav>
-    <a href="index.html" style="font-family: 'Amiri', serif;">الصفحة الرئيسية</a>
+    <a href="index.html">الصفحة الرئيسية</a>
     <div class="dropdown">
-      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الصفحات</a>
+      <a href="#chapitres" class="dropdown-toggle">الصفحات</a>
       <div class="dropdown-menu">
-        <a href="p4.html" style="font-family: 'Amiri', serif;">الصفحة 1 </a>
-        <a href="p6.html" style="font-family: 'Amiri', serif;">الصفحة 2</a>
-        <a href="p8.html" style="font-family: 'Amiri', serif;">الصفحة 3</a>
-        <a href="p10.html" style="font-family: 'Amiri', serif;">الصفحة 4</a>
-        <a href="p11.html" style="font-family: 'Amiri', serif;">الصفحة 5</a>
-        <a href="p13.html" style="font-family: 'Amiri', serif;">الصفحة 6</a>
-        <a href="p15.html" style="font-family: 'Amiri', serif;">الصفحة 7</a>
-        <!-- Add more chapters as needed -->
+        <a href="p4.html">الصفحة 1</a>
+        <a href="p6.html">الصفحة 2</a>
+        <a href="p8.html">الصفحة 3</a>
+        <a href="p10.html">الصفحة 4</a>
+        <a href="p11.html">الصفحة 5</a>
+        <a href="p13.html">الصفحة 6</a>
+        <a href="p15.html">الصفحة 7</a>
       </div>
     </div>
-    <div class="dropdown-menu">
-      <a href="#chapitres" style="font-family: 'Amiri', serif;">الصفحة 1</a>
-      <a href="#chapitres" style="font-family: 'Amiri', serif;">الصفحة 2</a>
-      <a href="#chapitres" style="font-family: 'Amiri', serif;">الصفحة 3</a>
-
-    </div>
-
-    <a href="qcm1.html" style="font-family: 'Amiri', serif;">التمارين</a>
-    <a href="4.html" style="font-family: 'Amiri', serif;">الفيديو الخاص بالفصل الأول</a>
-            <a href="4.html" style="font-family: 'Amiri', serif;">الفيديو الخاص بتحليل الفصل الأول</a>
-
+    <a href="qcm1.html">التمارين</a>
+    <a href="4.html">الفيديو الخاص بالفصل الأول</a>
+    <a href="4.html">الفيديو الخاص بتحليل الفصل الأول</a>
     <div class="dropdown">
-      <a href="#chapitres" class="dropdown-toggle" style="font-family: 'Amiri', serif;">الفصول</a>
+      <a href="#chapitres" class="dropdown-toggle">الفصول</a>
       <div class="dropdown-menu">
-        <a href="p4.html" style="font-family: 'Amiri', serif;">الفصل 1</a>
-        <a href="#chapter2" style="font-family: 'Amiri', serif;">الفصل 2</a>
-        <!-- Add more chapters as needed -->
+        <a href="p4.html">الفصل 1</a>
+        <a href="#chapter2">الفصل 2</a>
       </div>
     </div>
   </nav>
+
   <div class="container">
     <h1>نص من رواية "اللص والكلاب"</h1>
-    <em><strong>
-        <p>
-          مرة أخرى يتنفس نسمة الحياة، ولكن في الجو غبار خانق، وحر لا يُطاق، وفي انتظاره وجد بدلته الزرقاء، وحذاءه
-          المطاط، وسواهما لم يجد في انتظاره أحدًا.
-          ها هي الدنيا تعود، وها هو باب السجن الأصم يبتعد مُنطويًا على الأسرار اليائسة.
-          هذه الطرقات المثقَلة بالشمس، وهذه السيارات المجنونة، والعابرون والجالسون، والبيوت والدكاكين، ولا شفة تَفْتَرّ
-          عن ابتسامة ..
-          وهو واحد، خسر الكثير، حتى الأعوام الغالية، خسر منها أربعة غدرًا، وسيقف عما قريب أمام الجميع مُتحدِّيًا،
-          آنَ للغضب أن ينفجر وأن يحرق، وللخونة أن ييأسوا حتى الموت، وللخيانة أن تُكفِّر عن سحنتها الشائهة.
-        </p>
-        <p>
-          نبوية عليش، كيف انقلب الاسمان اسمًا واحدًا؟ أنتما تعملان لهذا اليوم ألف حساب، وقديمًا ظننتما أن باب السجن لن
-          ينفتح،
-          ولعلكما تترقبان في حذر، ولن أقع في الفخّ، ولكني سأنقضَّ في الوقت المناسب كالقَدَر،
-          وسناء إذا خطرَتْ في النفس انجابَ عنها الحرُّ والغبار والبغضاء والكدر، وسطعَ الحنان فيها كالنقاء غبَّ المطر،
-          ماذا تعرف الصغيرة عن أبيها؟ .. لا شيء، كالطريق والمارة والجو المنصهر، طوال أربعة أعوام لم تَغِبْ عن باله،
-          وتدرَّجَتْ في النمو وهي صورة غامضة، فهل يسمح الحظ بمكان طيب يصلح لتبادل الحب، ينعم في ظله بالسرور المظفَّر؟
-        </p>
-        <p>
-          والخيانة ذكرى كريهة بائدة، استعِن بكل ما أُوتيتَ من دهاء، ولتكن ضربتك قوية، كصبرك الطويل وراء الجدران،
-          جاءكم من يغوص في الماء كالسمكة، ويطير في الهواء كالصقر، ويتسلق الجدران كالفأر، وينفذ من الأبواب كالرصاص.
-        </p>
-        <p>
-          تُرى بأي وجه يلقاك؟ كيف تتلاقى العينان؟ أنسيتَ يا عليش كيف كنت تتمسَّح في ساقيَّ كالكلب؟
-          ألم أعلِّمك الوقوف على قدمَينٍ؟ ومَن الذي جعل من جامع الأعقاب رجلًا؟
-          ولم تنسَ وحدك يا عليش، ولكنها نسيتْ أيضًا، تلك المرأة النابتة في طينة نتنة اسمها الخيانة،
-          ومن خلال هذا الكَدَر المنتشر لا يبسم إلا وجهك يا سناء، وعما قريب سأخبر مدى حظي من لقياك، عندما...
-        </p>
-      </strong></em>
-
+    <p>
+      مرة أخرى يتنفس نسمة الحياة، ولكن في الجو غبار خانق، وحر لا يُطاق، وفي انتظاره وجد بدلته الزرقاء، وحذاء
+      المطاط، وسواهما لم يجد في انتظاره أحدًا.
+      ها هي الدنيا تعود، وها هو باب السجن الأصم يبتعد مُنطويًا على الأسرار اليائسة.
+    </p>
+    <p>
+      نبوية عليش، كيف انقلب الاسمان اسمًا واحدًا؟ أنتما تعملان لهذا اليوم ألف حساب، وقديمًا ظننتما أن باب السجن
+      لن ينفتح.
+    </p>
+    <p>
+      تُرى بأي وجه يلقاك؟ كيف تتلاقى العينان؟ أنسيتَ يا عليش كيف كنت تتمسَّح في ساقيَّ كالكلب؟
+    </p>
     <div style="text-align: center; margin-top: 1rem; font-size: 1.2rem; color: gray;">
       الصفحة 1
     </div>
   </div>
+
   <div style="text-align: center; margin-top: 2rem;">
     <a class="navigation" href="p6.html">التالي</a>
   </div>
